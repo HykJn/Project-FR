@@ -3,7 +3,7 @@ guid: 56e329b205de7b04fb6092b61cbead24
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1806,89 +1813,88 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Temple_Animation01_72: 297375685
-      RA_Temple_Animation01_4: -388848567
-      RA_Temple_Animation01_73: 924042870
-      RA_Temple_Animation01_78: 1843202532
-      RA_Temple_Animation01_71: -326044194
-      RA_Temple_Animation01_60: -1369624873
-      RA_Temple_Animation01_53: 170865402
-      RA_Temple_Animation01_19: -904238355
-      RA_Temple_Animation01_30: -57876834
-      RA_Temple_Animation01_39: 1185767829
-      RA_Temple_Animation01_58: 944177367
-      RA_Temple_Animation01_44: -1383869583
-      RA_Temple_Animation01_7: 224058069
-      RA_Temple_Animation01_49: 1092351306
-      RA_Temple_Animation01_29: -552077173
-      RA_Temple_Animation01_52: 279991031
-      RA_Temple_Animation01_27: 370972842
-      RA_Temple_Animation01_24: -1553883904
-      RA_Temple_Animation01_5: -1040283071
-      RA_Temple_Animation01_70: 1448976050
-      RA_Temple_Animation01_50: 28418099
-      RA_Temple_Animation01_15: -1314727605
-      RA_Temple_Animation01_56: -1690580957
-      RA_Temple_Animation01_12: -1705029337
-      RA_Temple_Animation01_25: 1390792759
-      RA_Temple_Animation01_37: -134882992
-      RA_Temple_Animation01_43: -1693038246
-      RA_Temple_Animation01_62: -940542254
-      RA_Temple_Animation01_11: -1074220724
-      RA_Temple_Animation01_54: -1500703237
-      RA_Temple_Animation01_64: 1930810076
-      RA_Temple_Animation01_66: 972541530
-      RA_Temple_Animation01_13: 1529038496
-      RA_Temple_Animation01_79: 41897005
-      RA_Temple_Animation01_69: 1814214921
+      RA_Temple_Animation01_0: -1782914202
+      RA_Temple_Animation01_1: 99493695
       RA_Temple_Animation01_10: 1785245580
+      RA_Temple_Animation01_11: -1074220724
+      RA_Temple_Animation01_12: -1705029337
+      RA_Temple_Animation01_13: 1529038496
+      RA_Temple_Animation01_14: -513106171
+      RA_Temple_Animation01_15: -1314727605
+      RA_Temple_Animation01_16: 1621743093
+      RA_Temple_Animation01_17: -251533323
+      RA_Temple_Animation01_18: -1680594501
+      RA_Temple_Animation01_19: -904238355
+      RA_Temple_Animation01_2: -1867961939
+      RA_Temple_Animation01_20: -1895290881
+      RA_Temple_Animation01_21: 1595092774
+      RA_Temple_Animation01_22: 1025308901
+      RA_Temple_Animation01_23: 585761955
+      RA_Temple_Animation01_24: -1553883904
+      RA_Temple_Animation01_25: 1390792759
+      RA_Temple_Animation01_26: 783227262
+      RA_Temple_Animation01_27: 370972842
+      RA_Temple_Animation01_28: -1035261617
+      RA_Temple_Animation01_29: -552077173
+      RA_Temple_Animation01_3: -1282546463
+      RA_Temple_Animation01_30: -57876834
+      RA_Temple_Animation01_31: 2042789336
+      RA_Temple_Animation01_32: -1233761502
       RA_Temple_Animation01_33: -1793727299
       RA_Temple_Animation01_34: 445941751
-      RA_Temple_Animation01_21: 1595092774
-      RA_Temple_Animation01_32: -1233761502
-      RA_Temple_Animation01_42: -2086176187
-      RA_Temple_Animation01_14: -513106171
-      RA_Temple_Animation01_17: -251533323
-      RA_Temple_Animation01_23: 585761955
-      RA_Temple_Animation01_20: -1895290881
-      RA_Temple_Animation01_28: -1035261617
-      RA_Temple_Animation01_16: 1621743093
-      RA_Temple_Animation01_2: -1867961939
-      RA_Temple_Animation01_18: -1680594501
-      RA_Temple_Animation01_47: -376739912
-      RA_Temple_Animation01_55: 1463923013
-      RA_Temple_Animation01_76: -2123367955
-      RA_Temple_Animation01_63: -551248821
-      RA_Temple_Animation01_3: -1282546463
-      RA_Temple_Animation01_31: 2042789336
-      RA_Temple_Animation01_40: -122559401
-      RA_Temple_Animation01_46: 747319975
-      RA_Temple_Animation01_74: -2130604409
       RA_Temple_Animation01_35: -940958774
-      RA_Temple_Animation01_75: 1539151658
       RA_Temple_Animation01_36: -2032985037
-      RA_Temple_Animation01_22: 1025308901
-      RA_Temple_Animation01_8: 1758471601
-      RA_Temple_Animation01_65: 1772470275
-      RA_Temple_Animation01_1: 99493695
+      RA_Temple_Animation01_37: -134882992
       RA_Temple_Animation01_38: -2008619870
-      RA_Temple_Animation01_45: 1101210458
-      RA_Temple_Animation01_48: -1559901063
-      RA_Temple_Animation01_9: -2123344632
-      RA_Temple_Animation01_26: 783227262
-      RA_Temple_Animation01_0: -1782914202
-      RA_Temple_Animation01_77: 1238362329
-      RA_Temple_Animation01_57: -259155485
-      RA_Temple_Animation01_51: -257563702
-      RA_Temple_Animation01_67: -1478147852
-      RA_Temple_Animation01_59: -430679346
+      RA_Temple_Animation01_39: 1185767829
+      RA_Temple_Animation01_4: -388848567
+      RA_Temple_Animation01_40: -122559401
       RA_Temple_Animation01_41: -1371735277
-      RA_Temple_Animation01_61: -1524879897
-      RA_Temple_Animation01_68: 1888579537
+      RA_Temple_Animation01_42: -2086176187
+      RA_Temple_Animation01_43: -1693038246
+      RA_Temple_Animation01_44: -1383869583
+      RA_Temple_Animation01_45: 1101210458
+      RA_Temple_Animation01_46: 747319975
+      RA_Temple_Animation01_47: -376739912
+      RA_Temple_Animation01_48: -1559901063
+      RA_Temple_Animation01_49: 1092351306
+      RA_Temple_Animation01_5: -1040283071
+      RA_Temple_Animation01_50: 28418099
+      RA_Temple_Animation01_51: -257563702
+      RA_Temple_Animation01_52: 279991031
+      RA_Temple_Animation01_53: 170865402
+      RA_Temple_Animation01_54: -1500703237
+      RA_Temple_Animation01_55: 1463923013
+      RA_Temple_Animation01_56: -1690580957
+      RA_Temple_Animation01_57: -259155485
+      RA_Temple_Animation01_58: 944177367
+      RA_Temple_Animation01_59: -430679346
       RA_Temple_Animation01_6: 1767827999
-  spritePackingTag: 
+      RA_Temple_Animation01_60: -1369624873
+      RA_Temple_Animation01_61: -1524879897
+      RA_Temple_Animation01_62: -940542254
+      RA_Temple_Animation01_63: -551248821
+      RA_Temple_Animation01_64: 1930810076
+      RA_Temple_Animation01_65: 1772470275
+      RA_Temple_Animation01_66: 972541530
+      RA_Temple_Animation01_67: -1478147852
+      RA_Temple_Animation01_68: 1888579537
+      RA_Temple_Animation01_69: 1814214921
+      RA_Temple_Animation01_7: 224058069
+      RA_Temple_Animation01_70: 1448976050
+      RA_Temple_Animation01_71: -326044194
+      RA_Temple_Animation01_72: 297375685
+      RA_Temple_Animation01_73: 924042870
+      RA_Temple_Animation01_74: -2130604409
+      RA_Temple_Animation01_75: 1539151658
+      RA_Temple_Animation01_76: -2123367955
+      RA_Temple_Animation01_77: 1238362329
+      RA_Temple_Animation01_78: 1843202532
+      RA_Temple_Animation01_79: 41897005
+      RA_Temple_Animation01_8: 1758471601
+      RA_Temple_Animation01_9: -2123344632
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

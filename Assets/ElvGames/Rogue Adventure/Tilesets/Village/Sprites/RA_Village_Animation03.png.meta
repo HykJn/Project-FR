@@ -3,7 +3,7 @@ guid: abb7b233b68d8eb46a96c1fd1aec8045
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -966,49 +973,48 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Village_Animation03_19: 437926959
+      RA_Village_Animation03_0: -1114780951
+      RA_Village_Animation03_1: -620430415
+      RA_Village_Animation03_10: 647801589
+      RA_Village_Animation03_11: 1511272847
+      RA_Village_Animation03_12: 154694992
       RA_Village_Animation03_13: -770655409
       RA_Village_Animation03_14: 768456514
-      RA_Village_Animation03_9: -103711912
-      RA_Village_Animation03_26: -1976112684
-      RA_Village_Animation03_25: 2029361138
-      RA_Village_Animation03_21: 137414502
-      RA_Village_Animation03_2: 1836044755
-      RA_Village_Animation03_4: 1449121558
-      RA_Village_Animation03_0: -1114780951
-      RA_Village_Animation03_3: -1556558824
-      RA_Village_Animation03_6: -818770236
       RA_Village_Animation03_15: 1406670399
-      RA_Village_Animation03_8: 1384382750
-      RA_Village_Animation03_31: -1179461425
+      RA_Village_Animation03_16: 908069064
+      RA_Village_Animation03_17: 418187482
+      RA_Village_Animation03_18: -680782131
+      RA_Village_Animation03_19: 437926959
+      RA_Village_Animation03_2: 1836044755
+      RA_Village_Animation03_20: -1712271923
+      RA_Village_Animation03_21: 137414502
       RA_Village_Animation03_22: 846251470
-      RA_Village_Animation03_33: 2075598729
-      RA_Village_Animation03_28: -1272759045
-      RA_Village_Animation03_30: 61084968
-      RA_Village_Animation03_11: 1511272847
+      RA_Village_Animation03_23: -1486984399
       RA_Village_Animation03_24: 2055752903
+      RA_Village_Animation03_25: 2029361138
+      RA_Village_Animation03_26: -1976112684
+      RA_Village_Animation03_27: -1569864575
+      RA_Village_Animation03_28: -1272759045
+      RA_Village_Animation03_29: -1795282600
+      RA_Village_Animation03_3: -1556558824
+      RA_Village_Animation03_30: 61084968
+      RA_Village_Animation03_31: -1179461425
+      RA_Village_Animation03_32: 369247043
+      RA_Village_Animation03_33: 2075598729
       RA_Village_Animation03_34: 621565576
+      RA_Village_Animation03_35: 32827270
+      RA_Village_Animation03_36: -1992106689
       RA_Village_Animation03_37: -1213450265
       RA_Village_Animation03_38: -1845088441
-      RA_Village_Animation03_27: -1569864575
-      RA_Village_Animation03_32: 369247043
-      RA_Village_Animation03_18: -680782131
-      RA_Village_Animation03_1: -620430415
-      RA_Village_Animation03_17: 418187482
-      RA_Village_Animation03_12: 154694992
-      RA_Village_Animation03_5: -2093966826
-      RA_Village_Animation03_7: -590340320
-      RA_Village_Animation03_10: 647801589
-      RA_Village_Animation03_16: 908069064
-      RA_Village_Animation03_36: -1992106689
       RA_Village_Animation03_39: 23801090
-      RA_Village_Animation03_35: 32827270
-      RA_Village_Animation03_29: -1795282600
-      RA_Village_Animation03_20: -1712271923
-      RA_Village_Animation03_23: -1486984399
-  spritePackingTag: 
+      RA_Village_Animation03_4: 1449121558
+      RA_Village_Animation03_5: -2093966826
+      RA_Village_Animation03_6: -818770236
+      RA_Village_Animation03_7: -590340320
+      RA_Village_Animation03_8: 1384382750
+      RA_Village_Animation03_9: -103711912
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

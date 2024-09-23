@@ -3,7 +3,7 @@ guid: c18d02a8f6d826f4187705471f5ac3d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -3066,149 +3073,148 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Wasteland_Animations01_3: 1325949674
-      RA_Wasteland_Animations01_70: -346836611
-      RA_Wasteland_Animations01_99: 1221448191
-      RA_Wasteland_Animations01_15: 900896359
-      RA_Wasteland_Animations01_125: -423108908
-      RA_Wasteland_Animations01_50: 905443565
+      RA_Wasteland_Animations01_0: -1840517017
+      RA_Wasteland_Animations01_1: 1335378602
+      RA_Wasteland_Animations01_10: 853814103
+      RA_Wasteland_Animations01_100: 1528644798
+      RA_Wasteland_Animations01_101: 571578200
+      RA_Wasteland_Animations01_102: 2145943055
+      RA_Wasteland_Animations01_103: 852122304
+      RA_Wasteland_Animations01_104: 2074865838
+      RA_Wasteland_Animations01_105: 873656232
+      RA_Wasteland_Animations01_106: 1181603380
+      RA_Wasteland_Animations01_107: -836374429
+      RA_Wasteland_Animations01_108: -1494952599
+      RA_Wasteland_Animations01_109: 2063581900
+      RA_Wasteland_Animations01_11: -1016123627
       RA_Wasteland_Animations01_110: 472517996
+      RA_Wasteland_Animations01_111: 1262752427
+      RA_Wasteland_Animations01_112: -1269293518
+      RA_Wasteland_Animations01_113: -1525536135
+      RA_Wasteland_Animations01_114: 352675904
+      RA_Wasteland_Animations01_115: -646007156
+      RA_Wasteland_Animations01_116: 1909287459
+      RA_Wasteland_Animations01_117: 1034295620
+      RA_Wasteland_Animations01_118: 1505708439
+      RA_Wasteland_Animations01_119: 361097220
+      RA_Wasteland_Animations01_12: -577795597
+      RA_Wasteland_Animations01_120: -1246844178
+      RA_Wasteland_Animations01_121: -1814228981
+      RA_Wasteland_Animations01_122: 51640243
+      RA_Wasteland_Animations01_123: -1511443451
+      RA_Wasteland_Animations01_124: -1525213349
+      RA_Wasteland_Animations01_125: -423108908
+      RA_Wasteland_Animations01_126: -1296608674
+      RA_Wasteland_Animations01_127: -2127219347
+      RA_Wasteland_Animations01_128: 961569126
       RA_Wasteland_Animations01_129: 1492963372
+      RA_Wasteland_Animations01_13: 1069446537
+      RA_Wasteland_Animations01_130: -630863997
+      RA_Wasteland_Animations01_131: -1604840615
+      RA_Wasteland_Animations01_132: -1287410898
+      RA_Wasteland_Animations01_133: 773836309
+      RA_Wasteland_Animations01_134: -2142219534
+      RA_Wasteland_Animations01_135: 1840145424
+      RA_Wasteland_Animations01_136: -1441303679
+      RA_Wasteland_Animations01_137: -1632351651
       RA_Wasteland_Animations01_138: 1224296388
+      RA_Wasteland_Animations01_139: -1952032944
+      RA_Wasteland_Animations01_14: 255794826
+      RA_Wasteland_Animations01_15: 900896359
+      RA_Wasteland_Animations01_16: -1144096494
+      RA_Wasteland_Animations01_17: -109316473
+      RA_Wasteland_Animations01_18: -744526302
+      RA_Wasteland_Animations01_19: 866812830
+      RA_Wasteland_Animations01_2: -1730954357
+      RA_Wasteland_Animations01_20: 1829188675
+      RA_Wasteland_Animations01_21: -1676899160
+      RA_Wasteland_Animations01_22: 616194648
+      RA_Wasteland_Animations01_23: 465125514
+      RA_Wasteland_Animations01_24: 1054057196
+      RA_Wasteland_Animations01_25: -2044996984
+      RA_Wasteland_Animations01_26: 1518106388
+      RA_Wasteland_Animations01_27: 288101915
+      RA_Wasteland_Animations01_28: -1335144484
+      RA_Wasteland_Animations01_29: 1330917715
+      RA_Wasteland_Animations01_3: 1325949674
+      RA_Wasteland_Animations01_30: -921586548
+      RA_Wasteland_Animations01_31: 559294634
+      RA_Wasteland_Animations01_32: -1394533018
+      RA_Wasteland_Animations01_33: -465717492
+      RA_Wasteland_Animations01_34: -812547784
+      RA_Wasteland_Animations01_35: 1146240456
+      RA_Wasteland_Animations01_36: 595044233
+      RA_Wasteland_Animations01_37: 1614193145
+      RA_Wasteland_Animations01_38: 1271623553
+      RA_Wasteland_Animations01_39: 1810457016
+      RA_Wasteland_Animations01_4: 1859450884
+      RA_Wasteland_Animations01_40: -1937741853
+      RA_Wasteland_Animations01_41: 1641626003
+      RA_Wasteland_Animations01_42: -1230790937
+      RA_Wasteland_Animations01_43: -1620667332
+      RA_Wasteland_Animations01_44: 251291028
+      RA_Wasteland_Animations01_45: -197756824
+      RA_Wasteland_Animations01_46: -241128210
+      RA_Wasteland_Animations01_47: -319676437
+      RA_Wasteland_Animations01_48: 880374969
+      RA_Wasteland_Animations01_49: 1643700776
+      RA_Wasteland_Animations01_5: 952043208
+      RA_Wasteland_Animations01_50: 905443565
+      RA_Wasteland_Animations01_51: -2035043787
+      RA_Wasteland_Animations01_52: 836893306
+      RA_Wasteland_Animations01_53: -871811240
+      RA_Wasteland_Animations01_54: 1735758594
+      RA_Wasteland_Animations01_55: -468391247
       RA_Wasteland_Animations01_56: 876986073
       RA_Wasteland_Animations01_57: 1013960276
-      RA_Wasteland_Animations01_69: -963330958
-      RA_Wasteland_Animations01_134: -2142219534
-      RA_Wasteland_Animations01_83: -1079764426
-      RA_Wasteland_Animations01_139: -1952032944
-      RA_Wasteland_Animations01_28: -1335144484
-      RA_Wasteland_Animations01_131: -1604840615
-      RA_Wasteland_Animations01_112: -1269293518
-      RA_Wasteland_Animations01_100: 1528644798
-      RA_Wasteland_Animations01_106: 1181603380
-      RA_Wasteland_Animations01_26: 1518106388
-      RA_Wasteland_Animations01_79: -1130511865
-      RA_Wasteland_Animations01_45: -197756824
-      RA_Wasteland_Animations01_119: 361097220
-      RA_Wasteland_Animations01_14: 255794826
-      RA_Wasteland_Animations01_72: -1874311585
-      RA_Wasteland_Animations01_41: 1641626003
-      RA_Wasteland_Animations01_53: -871811240
-      RA_Wasteland_Animations01_81: 1991502041
-      RA_Wasteland_Animations01_46: -241128210
-      RA_Wasteland_Animations01_55: -468391247
-      RA_Wasteland_Animations01_84: 1702466197
-      RA_Wasteland_Animations01_54: 1735758594
-      RA_Wasteland_Animations01_39: 1810457016
-      RA_Wasteland_Animations01_65: -1900821459
+      RA_Wasteland_Animations01_58: -218283834
       RA_Wasteland_Animations01_59: -171631548
-      RA_Wasteland_Animations01_89: 1739289150
-      RA_Wasteland_Animations01_101: 571578200
-      RA_Wasteland_Animations01_91: -1941951197
-      RA_Wasteland_Animations01_40: -1937741853
-      RA_Wasteland_Animations01_135: 1840145424
-      RA_Wasteland_Animations01_5: 952043208
-      RA_Wasteland_Animations01_86: -2065727358
-      RA_Wasteland_Animations01_133: 773836309
-      RA_Wasteland_Animations01_97: 859425871
-      RA_Wasteland_Animations01_52: 836893306
-      RA_Wasteland_Animations01_71: -482706366
-      RA_Wasteland_Animations01_74: -1893465405
-      RA_Wasteland_Animations01_93: -1230351236
-      RA_Wasteland_Animations01_102: 2145943055
+      RA_Wasteland_Animations01_6: 1054636150
       RA_Wasteland_Animations01_60: 1121105864
-      RA_Wasteland_Animations01_19: 866812830
-      RA_Wasteland_Animations01_18: -744526302
-      RA_Wasteland_Animations01_0: -1840517017
-      RA_Wasteland_Animations01_30: -921586548
+      RA_Wasteland_Animations01_61: 904618479
+      RA_Wasteland_Animations01_62: 924595101
+      RA_Wasteland_Animations01_63: -1636280927
+      RA_Wasteland_Animations01_64: -1593231833
+      RA_Wasteland_Animations01_65: -1900821459
+      RA_Wasteland_Animations01_66: 1990337318
+      RA_Wasteland_Animations01_67: -1272004301
+      RA_Wasteland_Animations01_68: -1015429906
+      RA_Wasteland_Animations01_69: -963330958
       RA_Wasteland_Animations01_7: 1389525222
+      RA_Wasteland_Animations01_70: -346836611
+      RA_Wasteland_Animations01_71: -482706366
+      RA_Wasteland_Animations01_72: -1874311585
+      RA_Wasteland_Animations01_73: -498761146
+      RA_Wasteland_Animations01_74: -1893465405
+      RA_Wasteland_Animations01_75: 1907014659
       RA_Wasteland_Animations01_76: 1441744919
       RA_Wasteland_Animations01_77: 57318919
-      RA_Wasteland_Animations01_10: 853814103
-      RA_Wasteland_Animations01_44: 251291028
-      RA_Wasteland_Animations01_24: 1054057196
-      RA_Wasteland_Animations01_107: -836374429
-      RA_Wasteland_Animations01_122: 51640243
-      RA_Wasteland_Animations01_132: -1287410898
-      RA_Wasteland_Animations01_63: -1636280927
-      RA_Wasteland_Animations01_127: -2127219347
-      RA_Wasteland_Animations01_25: -2044996984
-      RA_Wasteland_Animations01_13: 1069446537
-      RA_Wasteland_Animations01_75: 1907014659
-      RA_Wasteland_Animations01_64: -1593231833
-      RA_Wasteland_Animations01_121: -1814228981
-      RA_Wasteland_Animations01_21: -1676899160
-      RA_Wasteland_Animations01_1: 1335378602
-      RA_Wasteland_Animations01_88: 1523300419
-      RA_Wasteland_Animations01_111: 1262752427
-      RA_Wasteland_Animations01_116: 1909287459
-      RA_Wasteland_Animations01_68: -1015429906
-      RA_Wasteland_Animations01_98: 1322400912
-      RA_Wasteland_Animations01_108: -1494952599
-      RA_Wasteland_Animations01_43: -1620667332
-      RA_Wasteland_Animations01_120: -1246844178
-      RA_Wasteland_Animations01_126: -1296608674
-      RA_Wasteland_Animations01_124: -1525213349
-      RA_Wasteland_Animations01_4: 1859450884
-      RA_Wasteland_Animations01_80: -718656884
-      RA_Wasteland_Animations01_9: 1767660360
-      RA_Wasteland_Animations01_27: 288101915
-      RA_Wasteland_Animations01_94: -657351375
-      RA_Wasteland_Animations01_96: 1814056214
-      RA_Wasteland_Animations01_62: 924595101
-      RA_Wasteland_Animations01_6: 1054636150
-      RA_Wasteland_Animations01_118: 1505708439
-      RA_Wasteland_Animations01_23: 465125514
-      RA_Wasteland_Animations01_2: -1730954357
-      RA_Wasteland_Animations01_104: 2074865838
-      RA_Wasteland_Animations01_67: -1272004301
-      RA_Wasteland_Animations01_123: -1511443451
       RA_Wasteland_Animations01_78: -258835502
-      RA_Wasteland_Animations01_49: 1643700776
-      RA_Wasteland_Animations01_113: -1525536135
-      RA_Wasteland_Animations01_130: -630863997
-      RA_Wasteland_Animations01_58: -218283834
-      RA_Wasteland_Animations01_47: -319676437
-      RA_Wasteland_Animations01_29: 1330917715
-      RA_Wasteland_Animations01_128: 961569126
-      RA_Wasteland_Animations01_37: 1614193145
-      RA_Wasteland_Animations01_90: -777490735
-      RA_Wasteland_Animations01_114: 352675904
-      RA_Wasteland_Animations01_38: 1271623553
-      RA_Wasteland_Animations01_34: -812547784
+      RA_Wasteland_Animations01_79: -1130511865
       RA_Wasteland_Animations01_8: -543941215
-      RA_Wasteland_Animations01_12: -577795597
-      RA_Wasteland_Animations01_11: -1016123627
-      RA_Wasteland_Animations01_35: 1146240456
-      RA_Wasteland_Animations01_66: 1990337318
-      RA_Wasteland_Animations01_137: -1632351651
-      RA_Wasteland_Animations01_31: 559294634
-      RA_Wasteland_Animations01_22: 616194648
-      RA_Wasteland_Animations01_109: 2063581900
-      RA_Wasteland_Animations01_20: 1829188675
-      RA_Wasteland_Animations01_73: -498761146
-      RA_Wasteland_Animations01_17: -109316473
-      RA_Wasteland_Animations01_92: 801914803
-      RA_Wasteland_Animations01_42: -1230790937
-      RA_Wasteland_Animations01_61: 904618479
-      RA_Wasteland_Animations01_48: 880374969
-      RA_Wasteland_Animations01_117: 1034295620
-      RA_Wasteland_Animations01_16: -1144096494
+      RA_Wasteland_Animations01_80: -718656884
+      RA_Wasteland_Animations01_81: 1991502041
       RA_Wasteland_Animations01_82: -1656604525
-      RA_Wasteland_Animations01_95: 1410439622
-      RA_Wasteland_Animations01_87: 1700511319
-      RA_Wasteland_Animations01_103: 852122304
-      RA_Wasteland_Animations01_136: -1441303679
-      RA_Wasteland_Animations01_36: 595044233
-      RA_Wasteland_Animations01_33: -465717492
-      RA_Wasteland_Animations01_51: -2035043787
-      RA_Wasteland_Animations01_32: -1394533018
+      RA_Wasteland_Animations01_83: -1079764426
+      RA_Wasteland_Animations01_84: 1702466197
       RA_Wasteland_Animations01_85: 421422863
-      RA_Wasteland_Animations01_105: 873656232
-      RA_Wasteland_Animations01_115: -646007156
-  spritePackingTag: 
+      RA_Wasteland_Animations01_86: -2065727358
+      RA_Wasteland_Animations01_87: 1700511319
+      RA_Wasteland_Animations01_88: 1523300419
+      RA_Wasteland_Animations01_89: 1739289150
+      RA_Wasteland_Animations01_9: 1767660360
+      RA_Wasteland_Animations01_90: -777490735
+      RA_Wasteland_Animations01_91: -1941951197
+      RA_Wasteland_Animations01_92: 801914803
+      RA_Wasteland_Animations01_93: -1230351236
+      RA_Wasteland_Animations01_94: -657351375
+      RA_Wasteland_Animations01_95: 1410439622
+      RA_Wasteland_Animations01_96: 1814056214
+      RA_Wasteland_Animations01_97: 859425871
+      RA_Wasteland_Animations01_98: 1322400912
+      RA_Wasteland_Animations01_99: 1221448191
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

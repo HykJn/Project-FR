@@ -3,7 +3,7 @@ guid: db6e0748426850f4883d382da27873dc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1596,79 +1603,78 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Temple_Objects_20: 1682475583
-      RA_Temple_Objects_11: 1347449155
-      RA_Temple_Objects_2: 1816663253
-      RA_Temple_Objects_30: 691657433
-      RA_Temple_Objects_51: 693323182
-      RA_Temple_Objects_37: -1741555975
-      RA_Temple_Objects_7: -1098986673
-      RA_Temple_Objects_36: 491085886
-      RA_Temple_Objects_68: 1590223788
-      RA_Temple_Objects_46: 747906909
-      RA_Temple_Objects_41: 1990231383
-      RA_Temple_Objects_35: -1335190281
-      RA_Temple_Objects_13: -1726054631
-      RA_Temple_Objects_15: -792950524
-      RA_Temple_Objects_52: 1874996954
-      RA_Temple_Objects_32: -1111515593
-      RA_Temple_Objects_18: 2047374925
-      RA_Temple_Objects_12: -566244398
-      RA_Temple_Objects_42: -200760499
-      RA_Temple_Objects_58: -339825483
-      RA_Temple_Objects_59: -1848542026
-      RA_Temple_Objects_38: 2122145557
-      RA_Temple_Objects_64: -666616203
-      RA_Temple_Objects_67: -189910999
-      RA_Temple_Objects_63: -365089929
-      RA_Temple_Objects_22: -930602526
-      RA_Temple_Objects_8: 1477991447
-      RA_Temple_Objects_61: 914620630
-      RA_Temple_Objects_6: -549200886
-      RA_Temple_Objects_65: -250256337
-      RA_Temple_Objects_29: 1436167922
-      RA_Temple_Objects_69: 1903788357
-      RA_Temple_Objects_27: -217587915
-      RA_Temple_Objects_49: -549064501
-      RA_Temple_Objects_14: 1321662902
-      RA_Temple_Objects_50: -39285492
-      RA_Temple_Objects_17: -1787690397
-      RA_Temple_Objects_62: 242869730
-      RA_Temple_Objects_4: -736794696
-      RA_Temple_Objects_66: 1292455112
-      RA_Temple_Objects_39: -229467566
-      RA_Temple_Objects_53: -2070144242
-      RA_Temple_Objects_16: 1105548955
-      RA_Temple_Objects_10: -1635898395
-      RA_Temple_Objects_25: -517727917
-      RA_Temple_Objects_47: -155902686
-      RA_Temple_Objects_5: 637428083
-      RA_Temple_Objects_21: 308820312
-      RA_Temple_Objects_40: 1405014078
-      RA_Temple_Objects_44: -1249006715
-      RA_Temple_Objects_54: -116229804
-      RA_Temple_Objects_23: 1109413214
-      RA_Temple_Objects_1: -1401320502
-      RA_Temple_Objects_28: -1381659885
-      RA_Temple_Objects_43: 226212946
-      RA_Temple_Objects_60: -199019163
-      RA_Temple_Objects_9: -1621462606
-      RA_Temple_Objects_55: 1578983953
-      RA_Temple_Objects_26: -362509626
       RA_Temple_Objects_0: -1420430048
+      RA_Temple_Objects_1: -1401320502
+      RA_Temple_Objects_10: -1635898395
+      RA_Temple_Objects_11: 1347449155
+      RA_Temple_Objects_12: -566244398
+      RA_Temple_Objects_13: -1726054631
+      RA_Temple_Objects_14: 1321662902
+      RA_Temple_Objects_15: -792950524
+      RA_Temple_Objects_16: 1105548955
+      RA_Temple_Objects_17: -1787690397
+      RA_Temple_Objects_18: 2047374925
       RA_Temple_Objects_19: -1354457037
-      RA_Temple_Objects_31: -1905656053
-      RA_Temple_Objects_45: 1896607932
-      RA_Temple_Objects_56: 757975265
+      RA_Temple_Objects_2: 1816663253
+      RA_Temple_Objects_20: 1682475583
+      RA_Temple_Objects_21: 308820312
+      RA_Temple_Objects_22: -930602526
+      RA_Temple_Objects_23: 1109413214
+      RA_Temple_Objects_24: -716354489
+      RA_Temple_Objects_25: -517727917
+      RA_Temple_Objects_26: -362509626
+      RA_Temple_Objects_27: -217587915
+      RA_Temple_Objects_28: -1381659885
+      RA_Temple_Objects_29: 1436167922
       RA_Temple_Objects_3: -1648541636
-      RA_Temple_Objects_48: 1813423623
-      RA_Temple_Objects_57: 583649530
+      RA_Temple_Objects_30: 691657433
+      RA_Temple_Objects_31: -1905656053
+      RA_Temple_Objects_32: -1111515593
       RA_Temple_Objects_33: 802362771
       RA_Temple_Objects_34: 1413010620
-      RA_Temple_Objects_24: -716354489
-  spritePackingTag: 
+      RA_Temple_Objects_35: -1335190281
+      RA_Temple_Objects_36: 491085886
+      RA_Temple_Objects_37: -1741555975
+      RA_Temple_Objects_38: 2122145557
+      RA_Temple_Objects_39: -229467566
+      RA_Temple_Objects_4: -736794696
+      RA_Temple_Objects_40: 1405014078
+      RA_Temple_Objects_41: 1990231383
+      RA_Temple_Objects_42: -200760499
+      RA_Temple_Objects_43: 226212946
+      RA_Temple_Objects_44: -1249006715
+      RA_Temple_Objects_45: 1896607932
+      RA_Temple_Objects_46: 747906909
+      RA_Temple_Objects_47: -155902686
+      RA_Temple_Objects_48: 1813423623
+      RA_Temple_Objects_49: -549064501
+      RA_Temple_Objects_5: 637428083
+      RA_Temple_Objects_50: -39285492
+      RA_Temple_Objects_51: 693323182
+      RA_Temple_Objects_52: 1874996954
+      RA_Temple_Objects_53: -2070144242
+      RA_Temple_Objects_54: -116229804
+      RA_Temple_Objects_55: 1578983953
+      RA_Temple_Objects_56: 757975265
+      RA_Temple_Objects_57: 583649530
+      RA_Temple_Objects_58: -339825483
+      RA_Temple_Objects_59: -1848542026
+      RA_Temple_Objects_6: -549200886
+      RA_Temple_Objects_60: -199019163
+      RA_Temple_Objects_61: 914620630
+      RA_Temple_Objects_62: 242869730
+      RA_Temple_Objects_63: -365089929
+      RA_Temple_Objects_64: -666616203
+      RA_Temple_Objects_65: -250256337
+      RA_Temple_Objects_66: 1292455112
+      RA_Temple_Objects_67: -189910999
+      RA_Temple_Objects_68: 1590223788
+      RA_Temple_Objects_69: 1903788357
+      RA_Temple_Objects_7: -1098986673
+      RA_Temple_Objects_8: 1477991447
+      RA_Temple_Objects_9: -1621462606
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
