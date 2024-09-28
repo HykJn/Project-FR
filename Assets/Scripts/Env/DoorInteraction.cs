@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorInteraction : MonoBehaviour
 {
-    bool col = false;
+    public bool col = false;
 
     public GameObject from;
     public GameObject to;
@@ -37,7 +37,7 @@ public class DoorInteraction : MonoBehaviour
         {
             from.SetActive(false);
             to.SetActive(true);
-            player.transform.position = pos.position;
+            player.GetComponent<RectTransform>().position = pos.position;
         }
     }
 }
