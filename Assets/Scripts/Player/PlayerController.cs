@@ -10,6 +10,13 @@ public class PlayerController : MonoBehaviour
     [Header("-- Attack")]
     public GameObject slashPrefab;
     public float reach;
+    public float attackSpeed;
+    float _tickAttackSpeed;
+
+    [Header("-- Status")]
+    public int strength;
+    public float maxHP, curHP, maxMP, curMP;
+
 
     float axisH, axisV;
     Vector2 inputDir, mousePos;
@@ -28,6 +35,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         GetInput();
+        View();
         Move();
         Attack();
     }
@@ -41,6 +49,18 @@ public class PlayerController : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
+    public void View()
+    {
+        if (mousePos.x > this.transform.position.x)
+        {
+            this.GetComponent<RectTransform>().rotation = new Quaternion(0, 180, 0, 0);
+        }
+        else
+        {
+            this.GetComponent<RectTransform>().rotation = new Quaternion(0, 0, 0, 0);
+        }
+    }
+
     public void Move()
     {
         if (inputDir.magnitude > 0)
@@ -52,16 +72,6 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("Run", false);
             anim.SetFloat("RunState", 0f);
-        }
-
-
-        if (axisH > 0)
-        {
-            this.GetComponent<RectTransform>().rotation = new Quaternion(0, 180, 0, 0);
-        }
-        else if (axisH < 0)
-        {
-            this.GetComponent<RectTransform>().rotation = new Quaternion(0, 0, 0, 0);
         }
 
         int wallLayer = 1 << 3;
@@ -88,20 +98,29 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        Vector2 moveDir = new Vector2(-Mathf.Abs(axisH), axisV).normalized;
-        this.transform.Translate(baseSpeed * Time.deltaTime * moveDir);
+        Vector2 moveDir = new Vector2(axisH, axisV).normalized;
+        this.GetComponent<RectTransform>().position += baseSpeed * Time.deltaTime * (Vector3)moveDir;
     }
 
     public void Attack()
     {
-        if(Input.GetMouseButtonDown(0))
+        _tickAttackSpeed += Time.deltaTime;
+        if(Input.GetMouseButtonDown(0) && _tickAttackSpeed >= attackSpeed)
         {
             Vector2 attackDir = (mousePos - (Vector2)this.transform.position).normalized;
-            GameObject slashObj = Instantiate(slashPrefab, (Vector2)this.transform.position + attackDir*reach, Quaternion.identity);
+            //GameObject slashObj = Instantiate(slashPrefab, ((Vector2)this.transform.position + attackDir*reach) + Vector2.up*0.3f, Quaternion.identity);
+            GameObject slashObj = ObjectManager.instance.Activate("PlayerSlash");
+            slashObj.transform.position = ((Vector2)this.transform.position + attackDir * reach) + Vector2.up * 0.3f;
             anim.SetTrigger("Attack");
             anim.SetFloat("AttackState", 0f);
             anim.SetFloat("NormalState", 0f);
+            _tickAttackSpeed = 0f;
         }
+    }
+
+    public void Hit(float damage)
+    {
+        curHP -= damage;
     }
 
     /*

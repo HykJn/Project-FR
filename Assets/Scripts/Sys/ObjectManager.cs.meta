@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 6b03f09de57c35d46a563435ac60d17f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _pfPlayerSlash: {fileID: 3064826216060997474, guid: 92d8df04bb1dd0840b5c70ab5cbb97f5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
