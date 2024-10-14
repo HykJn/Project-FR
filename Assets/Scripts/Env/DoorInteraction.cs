@@ -23,12 +23,17 @@ public class DoorInteraction : MonoBehaviour
         {
             player = collision.gameObject;
             col = true;
+            player.GetComponent<PlayerController>()._flagInteractable = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) col = false;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            col = false;
+            player.GetComponent<PlayerController>()._flagInteractable = false;
+        }
     }
 
     void Interaction()

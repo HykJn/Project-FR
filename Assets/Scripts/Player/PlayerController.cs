@@ -17,6 +17,11 @@ public class PlayerController : MonoBehaviour
     public int strength;
     public float maxHP, curHP, maxMP, curMP;
 
+    [Header("-- Skills")]
+    public float defaultCoolDownReduction;
+    public float skill_Q_CoolDown, skill_E_CoolDown, skill_R_CoolDown, skill_Shift_CoolDown, skill_Space_CoolDown;
+    float _tickSkillQ, _tickSkillE, _tickSkillR, _tickSkillShift, _tickSkillSpace;
+    [HideInInspector] public bool _flagInteractable, _flagSkillAvailable;
 
     float axisH, axisV;
     Vector2 inputDir, mousePos;
@@ -24,12 +29,12 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        anim = GetComponentInChildren<Animator>();
+        Init();
     }
 
     private void Start()
     {
-        
+
     }
 
     private void Update()
@@ -38,6 +43,36 @@ public class PlayerController : MonoBehaviour
         View();
         Move();
         Attack();
+
+        //Skills
+        if (_flagSkillAvailable)
+        {
+            Skill_Q();
+            Skill_E();
+            Skill_R();
+            Skill_Shift();
+            Skill_Space();
+        }
+
+    }
+
+    public void Init()
+    {
+        //Components
+        anim = GetComponentInChildren<Animator>();
+
+        //Status
+        curHP = maxHP;
+        curMP = maxMP;
+
+        //Skills
+        _tickSkillQ = skill_Q_CoolDown;
+        _tickSkillE = skill_E_CoolDown;
+        _tickSkillR = skill_R_CoolDown;
+        _tickSkillShift = skill_Shift_CoolDown;
+        _tickSkillSpace = skill_Space_CoolDown;
+        _flagInteractable = false;
+        _flagSkillAvailable = true;
     }
 
     public void GetInput()
@@ -105,7 +140,7 @@ public class PlayerController : MonoBehaviour
     public void Attack()
     {
         _tickAttackSpeed += Time.deltaTime;
-        if(Input.GetMouseButtonDown(0) && _tickAttackSpeed >= attackSpeed)
+        if (Input.GetMouseButtonDown(0) && _tickAttackSpeed >= attackSpeed)
         {
             Vector2 attackDir = (mousePos - (Vector2)this.transform.position).normalized;
             //GameObject slashObj = Instantiate(slashPrefab, ((Vector2)this.transform.position + attackDir*reach) + Vector2.up*0.3f, Quaternion.identity);
@@ -123,7 +158,57 @@ public class PlayerController : MonoBehaviour
         curHP -= damage;
     }
 
-    /*
+    public void Skill_Q()
+    {
+        _tickSkillQ += Time.deltaTime;
+        if (_tickSkillQ >= skill_Q_CoolDown && Input.GetKeyDown(KeyCode.Q))
+        {
+            print("Q skill Activate");
+            _tickSkillQ = 0;
+        }
+    }
+
+    public void Skill_E()
+    {
+        _tickSkillE += Time.deltaTime;
+        if (!_flagInteractable && _tickSkillE >= skill_E_CoolDown && Input.GetKeyDown(KeyCode.E))
+        {
+            print("E skill Activate");
+            _tickSkillE = 0;
+        }
+    }
+
+    public void Skill_R()
+    {
+        _tickSkillR += Time.deltaTime;
+        if (_tickSkillR >= skill_R_CoolDown && Input.GetKeyDown(KeyCode.R))
+        {
+            print("R skill Activate");
+            _tickSkillR = 0;
+        }
+    }
+
+    public void Skill_Shift()
+    {
+        _tickSkillShift += Time.deltaTime;
+        if (_tickSkillShift >= skill_Shift_CoolDown && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            print("Shift skill Activate");
+            _tickSkillShift = 0;
+        }
+    }
+
+    public void Skill_Space()
+    {
+        _tickSkillSpace += Time.deltaTime;
+        if (_tickSkillSpace >= skill_Space_CoolDown && Input.GetKeyDown(KeyCode.Space))
+        {
+            print("Space skill Activate");
+            _tickSkillSpace = 0;
+        }
+    }
+
+    
     private void OnDrawGizmos()
     {
         if (axisH != 0)
@@ -144,5 +229,5 @@ public class PlayerController : MonoBehaviour
             Gizmos.DrawRay(left, Vector3.up * axisV * 0.3f);
         }
     }
-    */
+    
 }

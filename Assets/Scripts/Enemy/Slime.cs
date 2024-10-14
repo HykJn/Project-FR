@@ -29,7 +29,7 @@ public class Slime : Enemy
         animator.SetTrigger("Idle");
 
         //To Chase
-        if (_fDistanceToPlayer <= _fDistanceToChase)
+        if (_fDistanceToPlayer <= _iDistanceToChase)
         {
             curState = State.Chase;
         }
@@ -39,17 +39,23 @@ public class Slime : Enemy
     {
         curState = State.Chase;
         animator.SetTrigger("Chase");
-        Vector2 moveDir = GameObject.FindWithTag("Player").transform.position - this.transform.position;
-        this.transform.Translate(_fBaseSpeed * Time.deltaTime * moveDir.normalized);
+
+        Pathfinding();
+        if (pathList.Count > 1)
+        {
+            Vector2 movePos = new Vector2(pathList[1].x, pathList[1].y);
+            Vector2 dir = movePos - (Vector2)this.transform.position;
+            this.transform.Translate(_fBaseSpeed * Time.deltaTime * dir.normalized);
+        }
 
         //To Idle
-        if (_fDistanceToPlayer > _fDistanceToChase)
+        if (_fDistanceToPlayer > _iDistanceToChase)
         {
             curState = State.Idle;
         }
 
         //To Attack
-        if (_fDistanceToPlayer <= _fDistanceToAttack)
+        if (_fDistanceToPlayer <= _iDistanceToAttack)
         {
             _tAttackSpeed = 0f;
             curState = State.Attack;
@@ -69,7 +75,7 @@ public class Slime : Enemy
         }
 
         //To Chase
-        if (_fDistanceToPlayer > _fDistanceToAttack)
+        if (_fDistanceToPlayer > _iDistanceToAttack)
         {
             curState = State.Chase;
         }

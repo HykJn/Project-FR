@@ -312,6 +312,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1351205937}
   - {fileID: 8136559}
   - {fileID: 1137733622}
   - {fileID: 2068691799}
@@ -16818,7 +16819,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -16865,7 +16866,7 @@ MonoBehaviour:
   offsetY: 2
   size: 0
   minSize: 3
-  maxSize: 5.5
+  maxSize: 8
   Player: {fileID: 1698509246}
 --- !u!1 &571139876
 GameObject:
@@ -22852,11 +22853,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3518918680835979684, guid: f6e6b0e9ea7a6764faf47f85e2b35259, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.743677
+      value: 11.5
       objectReference: {fileID: 0}
     - target: {fileID: 3518918680835979684, guid: f6e6b0e9ea7a6764faf47f85e2b35259, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.7031584
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3518918680835979684, guid: f6e6b0e9ea7a6764faf47f85e2b35259, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22893,6 +22894,10 @@ PrefabInstance:
     - target: {fileID: 7063965820722768860, guid: f6e6b0e9ea7a6764faf47f85e2b35259, type: 3}
       propertyPath: m_Name
       value: Slime_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063965820722768860, guid: f6e6b0e9ea7a6764faf47f85e2b35259, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26264,12 +26269,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351205933}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10.180027, y: -1.5511487, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 113640188}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1351205938
 MonoBehaviour:
@@ -26764,10 +26769,18 @@ MonoBehaviour:
   reach: 1
   attackSpeed: 0.5
   strength: 0
-  maxHP: 0
+  maxHP: 100
   curHP: 0
-  maxMP: 0
+  maxMP: 100
   curMP: 0
+  defaultCoolDownReduction: 0
+  skill_Q_CoolDown: 5
+  skill_E_CoolDown: 5
+  skill_R_CoolDown: 5
+  skill_Shift_CoolDown: 5
+  skill_Space_CoolDown: 5
+  _flagInteractable: 0
+  _flagSkillAvailable: 0
 --- !u!224 &1698509246 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2645568354993414524, guid: ac9fed6faddca474abb14009b3d09257, type: 3}
@@ -27834,5 +27847,4 @@ SceneRoots:
   - {fileID: 571139877}
   - {fileID: 113640188}
   - {fileID: 1926737664}
-  - {fileID: 1351205937}
   - {fileID: 1023985059}
