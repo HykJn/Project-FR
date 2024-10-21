@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("-- Status")]
     public int strength;
+    public int intelligence;
     public float maxHP, curHP, maxMP, curMP;
 
     [Header("-- Skills")]
@@ -22,10 +23,25 @@ public class PlayerController : MonoBehaviour
     public float skill_Q_CoolDown, skill_E_CoolDown, skill_R_CoolDown, skill_Shift_CoolDown, skill_Space_CoolDown;
     float _tickSkillQ, _tickSkillE, _tickSkillR, _tickSkillShift, _tickSkillSpace;
     [HideInInspector] public bool _flagInteractable, _flagSkillAvailable;
+    public Skill skill_Q, skill_E, skill_R, skill_Shift, skill_Space;
 
+    [Header("-- Weapon")]
+    public bool swapable;
+    public string pWeapon, sWeapon;
+    public string curWeapon
+    {
+        get
+        {
+            return _flagSwap ? pWeapon : sWeapon;
+        }
+    }
+    bool _flagSwap;
+    
     float axisH, axisV;
     Vector2 inputDir, mousePos;
     Animator anim;
+
+    public SpriteRenderer[] sprites;
 
     private void Awake()
     {
@@ -43,6 +59,7 @@ public class PlayerController : MonoBehaviour
         View();
         Move();
         Attack();
+        SwapWeapon();
 
         //Skills
         if (_flagSkillAvailable)
@@ -60,6 +77,7 @@ public class PlayerController : MonoBehaviour
     {
         //Components
         anim = GetComponentInChildren<Animator>();
+        sprites = this.GetComponentsInChildren<SpriteRenderer>();
 
         //Status
         curHP = maxHP;
@@ -73,6 +91,15 @@ public class PlayerController : MonoBehaviour
         _tickSkillSpace = skill_Space_CoolDown;
         _flagInteractable = false;
         _flagSkillAvailable = true;
+
+        skill_Q = null;
+        skill_E = null;
+        skill_R = null;
+        skill_Shift = null;
+        skill_Space = null;
+
+        //Swap
+        _flagSwap = true;
     }
 
     public void GetInput()
@@ -150,6 +177,7 @@ public class PlayerController : MonoBehaviour
             anim.SetFloat("AttackState", 0f);
             anim.SetFloat("NormalState", 0f);
             _tickAttackSpeed = 0f;
+            print(curWeapon);
         }
     }
 
@@ -164,6 +192,7 @@ public class PlayerController : MonoBehaviour
         if (_tickSkillQ >= skill_Q_CoolDown && Input.GetKeyDown(KeyCode.Q))
         {
             print("Q skill Activate");
+            skill_Q.UseSkill(skill_Q.coType == CoefficientType.Physical ? strength : intelligence);
             _tickSkillQ = 0;
         }
     }
@@ -174,6 +203,10 @@ public class PlayerController : MonoBehaviour
         if (!_flagInteractable && _tickSkillE >= skill_E_CoolDown && Input.GetKeyDown(KeyCode.E))
         {
             print("E skill Activate");
+            if(skill_E == null)
+            {
+                Debug.Log("Not set skill on E");
+            }
             _tickSkillE = 0;
         }
     }
@@ -208,6 +241,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+    public void SwapWeapon()
+    {
+        if (swapable && Input.GetKeyDown(KeyCode.Tab)) _flagSwap = !_flagSwap;
+    }
     
     private void OnDrawGizmos()
     {
@@ -216,8 +254,8 @@ public class PlayerController : MonoBehaviour
             Vector2 upper = this.transform.position + Vector3.up * 0.3f;
             Vector2 lower = this.transform.position + Vector3.down * 0.3f;
 
-            Gizmos.DrawRay(upper, Vector3.right * axisH * 0.25f);
-            Gizmos.DrawRay(lower, Vector3.right * axisH * 0.25f);
+            Gizmos.DrawRay(upper, Vector3.right * axisH * 0.35f);
+            Gizmos.DrawRay(lower, Vector3.right * axisH * 0.35f);
 
         }
         if (axisV != 0)

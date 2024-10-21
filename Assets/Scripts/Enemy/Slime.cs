@@ -26,7 +26,7 @@ public class Slime : Enemy
     protected override void Idle()
     {
         curState = State.Idle;
-        animator.SetTrigger("Idle");
+        animator.Play("Idle");
 
         //To Chase
         if (_fDistanceToPlayer <= _iDistanceToChase)
@@ -38,7 +38,7 @@ public class Slime : Enemy
     protected override void Chase()
     {
         curState = State.Chase;
-        animator.SetTrigger("Chase");
+        animator.Play("Chase");
 
         Pathfinding();
         if (pathList.Count > 1)
@@ -66,11 +66,10 @@ public class Slime : Enemy
     {
         curState = State.Attack;
 
-
         _tAttackSpeed += Time.deltaTime;
         if (_tAttackSpeed >= _fAttackSpeed)
         {
-            animator.SetTrigger("Attack");
+            animator.Play("Attack");
             _tAttackSpeed = 0f;
         }
 
@@ -84,7 +83,7 @@ public class Slime : Enemy
     protected override void Hit(float damage)
     {
         curState = State.Hit;
-        animator.SetTrigger("Hit");
+        animator.Play("Hit");
         this._fCurHP -= damage;
     }
 }

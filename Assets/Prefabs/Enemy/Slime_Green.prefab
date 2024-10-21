@@ -104,9 +104,34 @@ MonoBehaviour:
   _fMaxHP: 10
   _fCurHP: 10
   _fBaseSpeed: 1
-  _fDistanceToChase: 5
-  _fDistanceToAttack: 1
   _fAttackSpeed: 1
+  _iDistanceToChase: 5
+  _iDistanceToAttack: 1
+  openList: []
+  closeList: []
+  pathList: []
+  startNode:
+    x: 0
+    y: 0
+    isWall: 0
+    G: 0
+    H: 0
+  targetNode:
+    x: 0
+    y: 0
+    isWall: 0
+    G: 0
+    H: 0
+  curNode:
+    x: 0
+    y: 0
+    isWall: 0
+    G: 0
+    H: 0
+  targetPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0}
+  bottomLeft: {x: 0, y: 0}
+  topRight: {x: 0, y: 0}
 --- !u!95 &5345940157702706729
 Animator:
   serializedVersion: 5
